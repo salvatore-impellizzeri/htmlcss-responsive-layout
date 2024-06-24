@@ -14,18 +14,28 @@ img{
 }
 
 h1{
+    color: #9792E4;
+}
+
+h2{
     color: white; 
     margin: 100px 0px 0px;
     font-size: 40px;
 }
 
-h2{
+h3{
+    font-size: 25px;
     color: #0083FC;
 }
 
-h3{
-    font-size: 30px;
+h4{
+    font-size: 25px;
     margin: 20px;
+}
+
+p{
+    line-height: 35px;
+    margin: 25px 0px;
 }
 
 /********************************************* 
@@ -51,7 +61,7 @@ h3{
                     BUTTON
  *********************************************/
 
-.circle{
+.circle-arrow{
     padding: 20px 25px;
     border-radius: 50%;
     color: black;
@@ -157,10 +167,8 @@ main{
 }
 
 .card p{
-    margin: 30px 0;
     color: #5A6E7F;
     font-weight: bold;
-    line-height: 30px;
 }
 
 
@@ -189,21 +197,21 @@ main{
     padding-top: 50px;
 }
 
-.col-1-2:first-of-type > p{
+.col-1-2:first-of-type p{
     font-size: 20px;
     color: white;
-    line-height: 35px;
+    margin: 80px 0px 40px;
 }
 
 .col-1-2:last-of-type{
     text-align: center;
+    margin-bottom: 70px;
 }
 
-.col-1-2:last-of-type > p{
+.col-1-2:last-of-type p{
     color: black;
     font-style: italic;
     font-size: 20px;
-    line-height: 35px;
     font-weight: 400;
 }
 
@@ -215,21 +223,75 @@ main{
                 TERZA SEZIONE 
 *********************************************/
 
+.flex-container:nth-of-type(3){
+    text-align: center;
+}
+
+.flex-container:nth-of-type(3) div:first-child{
+    margin: 0px auto 30px;
+    font-size: 20px;
+}
+
+.flex-container:nth-of-type(3) p{
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+/* CONTAINER TESTIMONIAL */
+
+.test-container{
+    width: 100%;
+}
+
+.circle{
+    object-fit: cover;
+    border-radius: 50%;
+    width: 50vw;
+    height: 50vw;
+}
+
+.interview{
+    color: white;
+    margin: 15px 0 0;
+}
+
+.interview > .fa-quote-left{
+    position: relative;
+    bottom: 5px;
+}
+
+.interview > span{
+    line-height: 35px;
+}
+
+.interview > .fa-quote-right{
+    position: relative;
+    top: 5px;
+}
+
+.name-test{
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: bold;
+}
 
 
 
- /********************************************* 
+/********************************************* 
                     FOOTER
 *********************************************/
 
- /********************************************* 
+/********************************************* 
                     DEBUG
- *********************************************/
+*********************************************/
 
 
- /********************************************* 
+
+
+
+/********************************************* 
                     RESPONSIVE
- *********************************************/
+*********************************************/
 
 /*************** TABLET (576px) ***************/
 
@@ -237,9 +299,9 @@ main{
 
 /********************************************* 
                     BUTTON
- *********************************************/
+*********************************************/
 
-.circle{
+.circle-arrow{
     padding: 10px 15px;
     margin-top: 30px;
 }
@@ -290,11 +352,10 @@ main{
     .col-1-2:first-of-type > p{
         font-size: 10px;
         line-height: 20px;
-        margin: 30px 0px 20px;
         color: #F8F7FD;
     }
 
-    .col-1-2:last-of-type > h3{
+    .col-1-2:last-of-type > h4{
         font-size: 20px;
     }
 
@@ -321,7 +382,7 @@ main{
 
 @media screen and (min-width:992px) {
 
-    h1{
+    h2{
         font-size: 35px;
     }
 
@@ -329,7 +390,7 @@ main{
                     BUTTON
 *********************************************/
     
-    .circle{
+    .circle-arrow{
         padding: 20px 25px;
     }
 
@@ -389,7 +450,7 @@ main{
 *********************************************/
 
     .padding{
-        padding: 50px 100px 80px; 
+        padding: 50px 150px 80px; 
     }
 
     .col-1-2{
@@ -419,7 +480,7 @@ main{
     }
     
     .col-1-2:last-of-type img{
-        width: 60%;
+        width: 70%;
     }
 
     .col-1-2:last-of-type .fa-arrow-down-long{
