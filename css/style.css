@@ -25,6 +25,36 @@ p{
 }
 
 /* 
+                    BUTTON
+ */
+
+.wide-button{    
+    font-size: 15px;
+    padding: 10px 45px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    border: none;
+    border-radius: 20px;
+}
+
+.small-button{
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 17px;
+    border: none;
+}
+
+.blue-button{
+    background-color: #0084FD;
+    color: white;
+}
+
+.white-button{
+    background-color: white;
+    color: black;
+}
+
+/* 
                     HEADER
  */
 
@@ -41,13 +71,13 @@ header{
 }
 
 .col-left, .col-right{
-    width: 50%;
     height: 80px;
     display: flex;
     align-items: center;
 }
 
 .col-right{
+    width: 90%;
     justify-content: flex-end;
 }
 
@@ -70,6 +100,11 @@ main{
 
 .container-flex{
     margin: 50px auto;
+    flex-wrap: wrap;
+}
+
+.card:first-of-type{
+    text-align: left;
 }
 
 .card{
@@ -77,29 +112,25 @@ main{
     border-radius: 20px;
     padding: 30px;
     padding-bottom: 0px;
-    position: relative;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
-.card > .phone{
-    display: flex;
-    align-content: flex-end;
-}
-
-.button{
-    padding: 10px 45px;
-    border-radius: 20px;
-    border: none;
-    font-size: 15px;
-    font-weight: bold;
-    letter-spacing: 3px;
+.card > .wide-button{
     margin-bottom: 30px;
 }
 
-.blue-button{
-    background-color: #0084FD;
-    color: white;
+.card .phone{
+    display: flex;
+    align-self: flex-end;
+    width: 250px;
 }
 
+.card > i{
+    color: #0084FD;
+    font-size: 80px;
+    margin-bottom: 30px;
+}
 
  /* 
                     FOOTER
@@ -117,11 +148,48 @@ main{
 /* TABLET (576px) */
 
 @media screen and (min-width:576px) {
-    
+    .card:first-of-type{
+        width: calc(2/3 * 100% - 10px);
+        text-align: left;
+    }
+
+    .card{
+        width: calc(1/3 * 100% - 10px);
+    }
 }
 
 /* DESKTOP (992px) */
 
 @media screen and (min-width:992px) {
-    
+    .container-header{
+        width: 70%;
+    }
+
+    .desktop-menu{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        color: white;
+    }
+
+    .desktop-menu > div{
+        margin: 0 20px;
+        font-size: 17px;
+    }
+
+    .desktop-menu > .small-button{
+        margin-bottom: 0;
+        margin-left: 20px;
+    }
+
+    .card > .phone{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .mobile-menu{
+        display: none;
+    }
+
+
 }
