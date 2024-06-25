@@ -44,44 +44,6 @@ p{
 }
 
 /********************************************* 
-                    BACKGROUND
-*********************************************/
-
-.bg-radius{
-    margin: 0 auto;
-    border-radius: 30px;
-    padding: 30px;
-}
-
-.bg-white{
-    background-color: white;
-}
-
-.bg-purple{
-    background-color: #9792e4;
-}
-
-.bg-black{
-    background-color: #333333;
-}
-
-/********************************************* 
-                    COLOR
-*********************************************/
-
-.purple{
-    color: #9792e4;
-}
-
-.orange{
-    color: #FDC15F;
-}
-
-.lightgray{
-    color: lightgrey;
-}
-
-/********************************************* 
                     BUTTON
  *********************************************/
 
@@ -134,11 +96,73 @@ p{
 }
 
 /********************************************* 
+                    BACKGROUND
+*********************************************/
+
+.bg-radius{
+    margin: 0 auto;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.bg-white{
+    background-color: white;
+}
+
+.bg-purple{
+    background-color: #9792e4;
+}
+
+.bg-black{
+    background-color: #333333;
+}
+
+.bg-blue{
+    background-color: #0083FC;
+}
+
+.bg-lightblue{
+    background-color: #B5DDFF;
+}
+
+/********************************************* 
+                    COLOR
+*********************************************/
+
+.purple{
+    color: #9792e4;
+}
+
+.orange{
+    color: #FDC15F;
+}
+
+.lightgray{
+    color: lightgrey;
+}
+
+.black{
+    color: black;
+}
+
+.white{
+    color: white;
+}
+
+.gray{
+    color: #5A6E7F;
+}
+
+.blue{
+    color: #0083FC;;
+}
+
+
+/********************************************* 
                     HEADER
- *********************************************/
+*********************************************/
 
 header{
-    background-color: #0083FC;
     width: 100%;
 }
 
@@ -175,7 +199,6 @@ header{
 }
 
 .mobile-menu{
-    color: white;
     font-size: 30px;
 }
 
@@ -202,7 +225,6 @@ main{
 }
 
 .card{
-    background-color: #B5DDFF;
     border-radius: 20px;
     padding: 30px;
     padding-bottom: 0px;
@@ -215,7 +237,6 @@ main{
 }
 
 .card p{
-    color: #5A6E7F;
     font-weight: bold;
 }
 
@@ -231,7 +252,6 @@ main{
 }
 
 .card > i{
-    color: #0084FD;
     font-size: 80px;
     margin-bottom: 30px;
 }
@@ -247,7 +267,6 @@ main{
 
 .col-1-2:first-of-type p{
     font-size: 20px;
-    color: white;
     margin: 80px 0px 40px;
 }
 
@@ -257,7 +276,6 @@ main{
 }
 
 .col-1-2:last-of-type p{
-    color: black;
     font-style: italic;
     font-size: 20px;
     font-weight: 400;
@@ -299,7 +317,6 @@ main{
 }
 
 .interview{
-    color: white;
     margin: 15px 0 0;
 }
 
@@ -327,8 +344,7 @@ main{
                 QUARTA SEZIONE 
 *********************************************/
 
-.white-title{
-    color: white;
+.title{
     text-align: center;
     margin: 50px 0;
     width: 100%;
@@ -338,17 +354,8 @@ main{
     font-size: 60px;
 }
 
-.purple{
-    color: #9792E4;
+.benefits > .bg-radius > h2{
     margin-top: 15px;
-}
-
-.gray{
-    color: gray;
-}
-
-.white{
-    color: white;
 }
 
 .bg-purple > .container > .bg-radius{
@@ -380,7 +387,6 @@ main{
 }
 
 .mark{
-    color: #9792E4;
     position: absolute;
     top: -15px;
     right: -15px;
@@ -389,7 +395,6 @@ main{
 
 .under-image{
     font-size: 30px;
-    color: #9792E4;
     margin-top: 30px;
 }
 
@@ -446,9 +451,27 @@ main{
     margin-bottom: 70px;
 }
 
+
+
+
+
+
+
+
+
+
+
 /********************************************* 
                     RESPONSIVE
 *********************************************/
+
+
+
+
+
+
+
+
 
 /*************** TABLET (576px) ***************/
 
@@ -639,6 +662,12 @@ main{
 
 
 
+
+
+
+
+
+
 /*************** (576px) fixing a bug ***************/
 
 @media screen and (min-width:700px) {
@@ -646,6 +675,25 @@ main{
             position: relative;
         }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*************** DESKTOP (992px) ***************/
 
@@ -682,9 +730,10 @@ main{
         color: white;
     }
 
-    .desktop-menu > div{
+    .desktop-menu > a{
         margin: 0 20px;
         font-size: 17px;
+        text-decoration: none;
     }
 
     .desktop-menu > .small-button{
@@ -692,14 +741,15 @@ main{
         margin-left: 20px;
     }
 
- /********************************************* 
+
+/********************************************* 
                     MAIN
- *********************************************/
+*********************************************/
 
 
- /********************************************* 
+/********************************************* 
                 PRIMA SEZIONE
- *********************************************/
+*********************************************/
     .card:first-of-type{
         display: flex;
     }
