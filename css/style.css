@@ -38,16 +38,17 @@ p{
     margin: 25px 0px;
 }
 
-/********************************************* 
-                    BACKGROUND
- *********************************************/
-
-.bg-purple{
-    background-color: #9792e4;
+.flex{
+    display: flex;
+    justify-content: space-between;
 }
 
+/********************************************* 
+                    BACKGROUND
+*********************************************/
+
 .bg-radius{
-    margin:auto;
+    margin: 0 auto;
     border-radius: 30px;
     padding: 30px;
 }
@@ -56,6 +57,29 @@ p{
     background-color: white;
 }
 
+.bg-purple{
+    background-color: #9792e4;
+}
+
+.bg-black{
+    background-color: #333333;
+}
+
+/********************************************* 
+                    COLOR
+*********************************************/
+
+.purple{
+    color: #9792e4;
+}
+
+.orange{
+    color: #FDC15F;
+}
+
+.lightgray{
+    color: lightgrey;
+}
 
 /********************************************* 
                     BUTTON
@@ -85,6 +109,15 @@ p{
     border: none;
 }
 
+.big-button{
+    letter-spacing: 3px;
+    border-radius: 30px;
+    padding: 20px 70px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+}
+
 .blue-button{
     background-color: #0084FD;
     color: white;
@@ -93,6 +126,11 @@ p{
 .white-button{
     background-color: white;
     color: black;
+}
+
+.purple-button{
+    background-color: #9792e4;
+    color: white;
 }
 
 /********************************************* 
@@ -104,9 +142,19 @@ header{
     width: 100%;
 }
 
-.container-header, .flex-container{
+.container-header{
     margin: auto;
     width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container{
+    margin: auto;
+    width: 80%;
+}
+
+.flex{
     display: flex;
     justify-content: space-between;
 }
@@ -143,7 +191,7 @@ main{
     width: 100%;
 }
 
-.flex-container{
+.container{
     width: 80%;
     margin: 50px auto;
     flex-wrap: wrap;
@@ -223,16 +271,16 @@ main{
                 TERZA SEZIONE 
 *********************************************/
 
-.flex-container:nth-of-type(3){
+.container:nth-of-type(3){
     text-align: center;
 }
 
-.flex-container:nth-of-type(3) div:first-child{
+.container:nth-of-type(3) div:first-child{
     margin: 0px auto 30px;
     font-size: 20px;
 }
 
-.flex-container:nth-of-type(3) p{
+.container:nth-of-type(3) p{
     font-size: 20px;
     margin-bottom: 50px;
 }
@@ -303,18 +351,100 @@ main{
     color: white;
 }
 
-.bg-purple > .flex-container > .bg-radius{
+.bg-purple > .container > .bg-radius{
     margin-bottom: 40px;
 }
 
+/********************************************* 
+                QUINTA SEZIONE 
+*********************************************/
 
+.left-col{
+    padding-top: 90px;
+    padding-bottom: 40px;
+}
+
+.about-us h1{
+    font-size: 50px;
+}
+
+.about-us > p{
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.img-container{
+    width: 50vw;
+    height: 50vw;
+    position: relative;
+}
+
+.mark{
+    color: #9792E4;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    font-size: 80px;
+}
+
+.under-image{
+    font-size: 30px;
+    color: #9792E4;
+    margin-top: 30px;
+}
+
+.about-us > .right-col > button{
+    padding: 5px 15px;
+    margin-top: 30px;
+}
+
+.about-us > .right-col .fa-linkedin{
+    margin-right: 10px;
+}
+
+.about-us{
+    padding-bottom: 50px;
+}
 
 /********************************************* 
                     FOOTER
 *********************************************/
 
+/********************************************* 
+                TOP FOOTER
+*********************************************/
 
+.top-footer{
+    text-align: center;
+    padding: 70px 30px;
+}
 
+.top-footer > div:first-child{
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.top-footer > h2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.top-footer > h1{
+    font-size: 70px;
+}
+
+/********************************************* 
+                BOTTOM FOOTER
+*********************************************/
+
+.bottom-footer{
+    text-align: center;
+    padding: 30px;
+}
+
+.bottom-footer p:first-child{
+    margin-bottom: 70px;
+}
 
 /********************************************* 
                     RESPONSIVE
@@ -349,7 +479,7 @@ main{
                 PRIMA SEZIONE
  *********************************************/
 
-    .container-header, .flex-container{
+    .container-header, .container{
         width: 90%;
     }
 
@@ -372,7 +502,7 @@ main{
                 SECONDA SEZIONE 
 *********************************************/
 
-    h1{
+    .benefits h1{
         font-size: 55px;
     }
 
@@ -422,11 +552,88 @@ main{
         margin: 70px auto;
     }
 
-    .bg-purple > .flex-container > .bg-radius{
+    .bg-purple > .container > .bg-radius{
         width: calc(1/2 * 100% - 40px);
+        display: flex;
+        flex-wrap: wrap;
     }
 
+    .bg-purple > .container > .bg-radius > .number,
+    .bg-purple > .container > .bg-radius > h2,
+    .bg-purple > .container > .bg-radius > .p
+    .bg-purple > .container > .bg-radius > button{
+        width: 100%;
+    }
+
+/********************************************* 
+                QUINTA SEZIONE 
+*********************************************/
+
+    .about-us{
+        padding-bottom: 0;
+    }
+
+    .left-col, .right-col{
+        padding-top: 50px;
+    }
+
+    .left-col{
+        width: 55%;
+    }
+
+    .right-col{
+        width: 35%;
+    }
+
+    .left-col > h1{
+        font-size: 70px;
+    }
+
+    .img-container{
+        width: 25vw;
+        height: 25vw;
+    }
+
+/********************************************* 
+                    FOOTER
+*********************************************/
+
+/********************************************* 
+                TOP FOOTER
+*********************************************/
+
+    .top-footer > p{
+        width: 40%;
+        margin: 20px auto;
+    }
+
+    .top-footer > .orange{
+        font-size: 90px;
+    }
+
+/********************************************* 
+                BOTTOM FOOTER
+*********************************************/
+
+    .bottom-footer > p{
+        width: 40%;
+        margin: auto;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*************** (576px) fixing a bug ***************/
 
@@ -460,7 +667,7 @@ main{
         display: none;
     }
 
-    .container-header, .flex-container{
+    .container-header, .container{
         width: 70%;
     }
 
@@ -524,6 +731,7 @@ main{
     }
     
     .col-1-2:last-of-type{
+        margin-bottom: 0;
         text-align: center;
         display: flex;
         align-self: flex-end;
@@ -549,7 +757,7 @@ main{
                 TERZA SEZIONE
 *********************************************/
 
-    .flex-container:nth-of-type(3){
+    .container:nth-of-type(3){
         display: block;
     }
 
@@ -562,11 +770,35 @@ main{
                 QUARTA SEZIONE
 *********************************************/
 
-    .bg-purple > .flex-container > .bg-radius{
+    .bg-purple > .container > .bg-radius{
         width: calc(1/3 * 100% - 40px);
     }
 
-    .white-title{
-        display: block;
+    .bg-purple > .container > .bg-radius > button{
+        align-self: flex-end;
     }
+
+/********************************************* 
+                QUINTA SEZIONE
+*********************************************/
+
+    .img-container{
+        width: 15vw;
+        height: 15vw;
+    }
+
+    .img-container > img{
+        width: 15vw;
+        height: 15vw;
+    }
+
+/********************************************* 
+                    FOOTER
+*********************************************/
+
+/********************************************* 
+                TOP FOOTER
+*********************************************/
+
+
 }
